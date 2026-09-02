@@ -1,0 +1,61 @@
+<title>お申し込み</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#fff;--fg:#1a1a1c;--muted:#6f6f78;--line:#e3e3e6;--accent:#1f4fd8;--soft:#fafaf9}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111113;--fg:#ececef;--muted:#8b8b95;--line:#2c2c31;--accent:#7fa2ff;--soft:#18181b}}
+:root[data-theme="dark"]{--bg:#111113;--fg:#ececef;--muted:#8b8b95;--line:#2c2c31;--accent:#7fa2ff;--soft:#18181b}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:'Inter','Noto Sans JP',-apple-system,BlinkMacSystemFont,'Hiragino Sans',sans-serif;
+ line-height:1.85;margin:0;font-size:16px;-webkit-font-smoothing:antialiased;font-feature-settings:"palt" 1}
+.wrap{max-width:760px;margin:0 auto;padding:72px 24px 120px}
+@media(max-width:620px){.wrap{padding:48px 20px 80px}}
+.eyebrow{font-size:11.5px;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;margin:0 0 18px;font-weight:600}
+h1{font-size:30px;font-weight:700;margin:0 0 20px;line-height:1.45;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:13px;font-weight:600;letter-spacing:.11em;color:var(--accent);margin:64px 0 22px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+h3{font-size:17px;font-weight:700;margin:34px 0 12px}
+p{margin:0 0 18px}
+.lead{font-size:17px;color:var(--fg)}
+.muted{color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse;margin:0 0 8px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:15px 0;border-bottom:1px solid var(--line);font-weight:400}
+th{width:180px;padding-right:24px;color:var(--muted);font-size:13.5px;font-weight:500}
+ol,ul{margin:0 0 18px;padding-left:1.3em}
+li{margin-bottom:10px}
+.box{border:1px solid var(--line);border-radius:2px;padding:26px 28px;margin:28px 0}
+.box.accent{border-color:var(--accent)}
+.cta{display:inline-block;border:1px solid var(--accent);color:var(--accent);border-radius:2px;
+ padding:14px 28px;text-decoration:none;font-weight:600;font-size:15.5px;margin:8px 8px 8px 0}
+.cta.primary{background:var(--accent);color:#fff}
+.price{font-variant-numeric:tabular-nums;font-weight:700;font-size:22px}
+.note{border-left:2px solid var(--line);padding-left:18px;color:var(--muted);font-size:14px}
+a{color:var(--accent)}
+footer{margin-top:80px;padding-top:28px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+</style>
+<div class="wrap">
+<p class="eyebrow">お申し込み</p>
+<h1>3つだけお答えください</h1>
+<p class="lead">ほかの項目は公開情報から作成済みです。お支払いは納品後のお振込みで、先にいただくことはありません。</p>
+<div class="box accent">
+<h3 style="margin-top:0">お答えいただく3つ</h3>
+<ol style="margin-bottom:0">
+<li><strong>支援方針</strong>　事業所として大切にしている支援の考え方</li>
+<li><strong>送迎の有無</strong>　あり／なし</li>
+<li><strong>主な行事</strong>　年間の主な行事、季節に応じた活動</li>
+</ol>
+</div>
+<h2>お申し込み方法</h2>
+<table>
+<tr><th>メール</th><td><a href="mailto:【メールアドレスを記入】?subject=%E6%94%AF%E6%8F%B4%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E7%94%B3%E8%BE%BC">【メールアドレスを記入】</a><br><span class="muted">事業所名と、上の3つをご記入ください</span></td></tr>
+<tr><th>FAX</th><td>【返信先FAX番号を記入】<br><span class="muted">お送りした用紙にご記入のうえご返送ください</span></td></tr>
+<tr><th>電話</th><td>【電話番号を記入】</td></tr>
+</table>
+<h2>お申し込みのあと</h2>
+<ol>
+<li>当日中に、全12項目の完成版と公表ページの固定URLをお送りします</li>
+<li>届出書の記載例を同封します（<strong>届出は事業所さまご自身で提出してください</strong>）</li>
+<li>2週間後に、届出がお済みかの確認を1通お送りします</li>
+<li>お支払いは納品後のお振込みです</li>
+</ol>
+<footer><strong>Nexus株式会社</strong><br>【所在地を記入】<br>電話 【電話番号を記入】　／　FAX 【返信先FAX番号を記入】</footer>
+</div>
