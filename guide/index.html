@@ -1,0 +1,160 @@
+<title>支援プログラムの書き方と記入例</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#fff;--fg:#1a1a1c;--muted:#6f6f78;--line:#e3e3e6;--accent:#1f4fd8;--soft:#fafaf9}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111113;--fg:#ececef;--muted:#8b8b95;--line:#2c2c31;--accent:#7fa2ff;--soft:#18181b}}
+:root[data-theme="dark"]{--bg:#111113;--fg:#ececef;--muted:#8b8b95;--line:#2c2c31;--accent:#7fa2ff;--soft:#18181b}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:'Inter','Noto Sans JP',-apple-system,BlinkMacSystemFont,'Hiragino Sans',sans-serif;
+ line-height:1.85;margin:0;font-size:16px;-webkit-font-smoothing:antialiased;font-feature-settings:"palt" 1}
+.wrap{max-width:760px;margin:0 auto;padding:72px 24px 120px}
+@media(max-width:620px){.wrap{padding:48px 20px 80px}}
+.eyebrow{font-size:11.5px;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;margin:0 0 18px;font-weight:600}
+h1{font-size:30px;font-weight:700;margin:0 0 20px;line-height:1.45;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:13px;font-weight:600;letter-spacing:.11em;color:var(--accent);margin:64px 0 22px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+h3{font-size:17px;font-weight:700;margin:34px 0 12px}
+p{margin:0 0 18px}
+.lead{font-size:17px;color:var(--fg)}
+.muted{color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse;margin:0 0 8px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:15px 0;border-bottom:1px solid var(--line);font-weight:400}
+th{width:180px;padding-right:24px;color:var(--muted);font-size:13.5px;font-weight:500}
+ol,ul{margin:0 0 18px;padding-left:1.3em}
+li{margin-bottom:10px}
+.box{border:1px solid var(--line);border-radius:2px;padding:26px 28px;margin:28px 0}
+.box.accent{border-color:var(--accent)}
+.cta{display:inline-block;border:1px solid var(--accent);color:var(--accent);border-radius:2px;
+ padding:14px 28px;text-decoration:none;font-weight:600;font-size:15.5px;margin:8px 8px 8px 0}
+.cta.primary{background:var(--accent);color:#fff}
+.price{font-variant-numeric:tabular-nums;font-weight:700;font-size:22px}
+.note{border-left:2px solid var(--line);padding-left:18px;color:var(--muted);font-size:14px}
+a{color:var(--accent)}
+footer{margin-top:80px;padding-top:28px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+
+form label{display:block;margin:0 0 16px;font-size:13px;color:var(--muted)}
+form input,form textarea,form select{display:block;width:100%;margin-top:6px;padding:10px 12px;
+  font:inherit;font-size:15px;color:var(--fg);background:var(--bg);
+  border:1px solid var(--line);border-radius:2px;box-sizing:border-box}
+form textarea{resize:vertical;line-height:1.7}
+form input:focus,form textarea:focus,form select:focus{outline:2px solid var(--accent);outline-offset:1px}
+button.cta{font:inherit;cursor:pointer}
+
+fieldset{border:1px solid var(--line);border-radius:2px;padding:16px 18px 10px;margin:0 0 20px}
+legend{font-size:13px;font-weight:700;color:var(--fg);padding:0 8px}
+label.chk{display:flex;gap:10px;align-items:flex-start;margin:0 0 10px;font-size:14px;color:var(--fg);cursor:pointer;line-height:1.65}
+label.chk input{width:auto;margin:5px 0 0;flex:none}
+label.chk span{flex:1}
+label.free{display:block;margin:14px 0 4px;font-size:12px;color:var(--muted)}
+
+blockquote{margin:20px 0;padding:16px 20px;border-left:2px solid var(--accent);background:var(--soft);font-size:14px;line-height:1.85}
+blockquote cite{display:block;margin-top:10px;font-size:12px;color:var(--muted);font-style:normal}
+ul.rei{margin:10px 0 26px;padding-left:20px}
+ul.rei li{margin:0 0 9px;font-size:14px;line-height:1.75}
+h3{font-size:15px;margin:28px 0 6px;font-weight:700}
+</style>
+<div class="wrap">
+<p class="eyebrow">児童発達支援・放課後等デイサービス</p>
+<h1>支援プログラムの書き方と、⑦5領域の記入例40</h1>
+<p class="lead">こども家庭庁が配っているのは白紙の様式です。<strong>中身の埋まった記載例は、当社が調べた範囲では配られていませんでした。</strong>ここに、そのまま使える形で置いておきます。無料です。</p>
+
+<div class="box">
+<p style="margin:0"><strong>このページで分かること</strong></p>
+<ol style="margin-bottom:0">
+<li>支援プログラムとは何か。何をすると義務を果たしたことになるのか</li>
+<li>やらないといくら減るのか。<strong>過去の分はどうなるのか</strong></li>
+<li>12項目に何を書くのか</li>
+<li><strong>一番書きにくい⑦「本人支援の内容と5領域の関連性」の記入例40</strong></li>
+<li>都道府県への届出書の書き方</li>
+</ol>
+</div>
+
+<h2>1. 支援プログラムとは</h2>
+<p>5領域（<strong>健康・生活／運動・感覚／認知・行動／言語・コミュニケーション／人間関係・社会性</strong>）を含む総合的な支援内容との関連性を明確にした、<strong>事業所全体の支援の実施に関する計画</strong>です（障発0330第16号 実施上の留意事項通知 (8の2)③）。</p>
+<p>個別支援計画が「お子さま一人ひとりの計画」なのに対して、支援プログラムは<strong>「事業所として何をしているか」の計画</strong>です。A4で2〜3枚に収まります。</p>
+
+<h2>2. やることは3つあります</h2>
+<table>
+<tr><th>①作る</th><td>12項目を書きます。様式はこども家庭庁が配っています（参考様式）。<strong>様式に従う義務はなく、レイアウトは自由です。</strong></td></tr>
+<tr><th>②公表する</th><td>「事業所のホームページに掲載する<strong>等、インターネットの利用その他の方法により</strong>広く公表する」とされています。<strong>掲載先は限定されていません。</strong></td></tr>
+<tr><th style="border-bottom:none">③届け出る</th><td style="border-bottom:none"><strong>公表方法と公表内容を都道府県（指定権者）に届け出ます。</strong>ここが抜けている事業所が多くあります。<strong>公表しただけでは減算は止まりません。</strong></td></tr>
+</table>
+
+<h2>3. やらないと、いくら減るか</h2>
+<p><strong>基本報酬が85%になります（15%減ります）。</strong>「基本報酬」は各種加算がなされる前の単位数で、<strong>加算は減りません</strong>（同通知 (8の2)②）。</p>
+<table>
+<tr><th>児童発達支援</th><td>1事業所あたり<strong>月 約45万円</strong>の減</td></tr>
+<tr><th style="border-bottom:none">放課後等デイサービス</th><td style="border-bottom:none">1事業所あたり<strong>月 約37万円</strong>の減</td></tr>
+</table>
+<p class="muted">根拠：令和5年障害福祉サービス等経営実態調査（令和4年度決算）第24表・第26表の1事業所あたり自立支援費等収入（児発 年35,650千円／放デイ 年29,677千円）の月割の15%。<strong>加算分を含む収入から計算しているため、実際の減額はこれより小さくなります。</strong></p>
+
+<h2>4. 過去の分はどうなるのか</h2>
+<p>減算の期間は条文でこう決まっています。</p>
+<blockquote>「支援プログラムの公表について都道府県に<strong>届出がされていない場合</strong>に減算することとなる。具体的には、<strong>届出がされていない月から届出がされていない状態が解消されるに至った月まで</strong>、障害児全員について減算するものであること。」<cite>障発0330第16号 実施上の留意事項通知 (8の2)⑤</cite></blockquote>
+<p>義務化は<strong>令和7年4月1日</strong>です。条文どおりに読めば、届け出ていない月から減算の対象になります。</p>
+<p><strong>では、今から届け出たら過去の分はどうなるのか。</strong>当社が確認した国のQ&amp;A 17本に、支援プログラム未公表減算の遡及を直接扱ったものは<strong>ありませんでした</strong>。ただし、同じ形の減算については国がこう答えています。</p>
+<blockquote>「行政機関が運営指導等で不適切な取り扱いを発見した時点ではなく、<strong>『基準を満たさない事実が生じた時点』まで遡及して減算を適用する</strong>こととなる。」<br>「令和6年10月の運営指導等において、業務継続計画の未策定が判明した場合、令和6年10月からではなく、<strong>令和6年4月分の報酬から減算の対象となる。</strong>」<cite>令和6年度障害福祉サービス等報酬改定等に関するQ&amp;A VOL.1（令和6年3月29日）問15</cite></blockquote>
+<p><strong>放置しても、後日の運営指導で同じ遡及が来る形になっています。</strong>実際の取扱いは指定権者によって異なる可能性があるため、<strong>ご自身の都道府県にご確認ください。</strong>電話で、事業所名を名乗らずに「一般的な取扱いを教えてください」と聞くこともできます。<a href="#toiawase">聞き方の例はこちら</a>。</p>
+
+<h2>5. 12項目に何を書くか</h2>
+<table>
+<tr><th>①事業所名</th><td>事業所の名称</td></tr>
+<tr><th>②作成年月日</th><td>作成または見直しを行った年月日</td></tr>
+<tr><th>③法人（事業所）理念</th><td>法人または事業所の理念</td></tr>
+<tr><th>④支援方針</th><td>事業所における支援の方針</td></tr>
+<tr><th>⑤営業時間</th><td><strong>運営規程に定める営業時間。</strong>実際の開所時間ではなく運営規程の記載と合わせます</td></tr>
+<tr><th>⑥送迎実施の有無</th><td>あり／なし</td></tr>
+<tr><th>⑦本人支援の内容と5領域の関連性</th><td><strong>ここが一番書きにくいところです。</strong>記載方法は問われません。<a href="#rei">記入例40はこちら</a></td></tr>
+<tr><th>⑧家族支援</th><td>きょうだいへの支援を含む、家族に対する支援</td></tr>
+<tr><th>⑨移行支援</th><td>就学・進学・他事業所への移行に向けた支援</td></tr>
+<tr><th>⑩地域支援・地域連携</th><td>関係機関との連携、地域での取組</td></tr>
+<tr><th>⑪職員の質の向上に資する取組</th><td>研修、会議、資格取得の支援など</td></tr>
+<tr><th style="border-bottom:none">⑫主な行事等</th><td style="border-bottom:none">年間の主な行事</td></tr>
+</table>
+<p><strong>⑦は5領域すべてに触れている必要があります。</strong>どれかが空のままだと、公表しても要件を満たさないおそれがあります。</p>
+
+<h2 id="rei">6. ⑦5領域の記入例40</h2>
+<p>児童発達支援・放課後等デイサービスでよく行われている支援を、領域ごとに8つずつ並べました。<strong>貴事業所で実際に行っているものを、そのままお使いいただけます。</strong></p>
+<div class="box accent">
+<p style="margin:0"><strong>★ 実際に行っていないものは書かないでください。</strong>公表する文書に事実と異なる内容を載せることはできません。都道府県への届出の内容にもなります。<br><span class="muted">この40の文言は、5領域（障発0330第16号 (8の2)③）に沿って当社が用意した記入例です。国や自治体が示したものではありません。</span></p>
+</div>
+<h3>健康・生活</h3><ul class="rei"><li>来所後の手洗いと持ち物の片づけを、毎回同じ順序で行っています。</li><li>活動の切れ目ごとに、水分補給とトイレの声かけをしています。</li><li>食事の場面では、苦手な食材を無理に勧めず、量を自分で選べる形にしています。</li><li>着替えや身支度は、できるところまで自分で行い、難しいところだけ手を添えています。</li><li>一日の生活の流れを絵や写真で示し、次に何をするかが分かるようにしています。</li><li>睡眠や食事の様子をご家庭と共有し、生活リズムを整える相談をしています。</li><li>季節や体調に応じて、活動量と休憩の取り方を調整しています。</li><li>衣服の調節や体温の確認など、自分の体の状態に気づく声かけをしています。</li></ul><h3>運動・感覚</h3><ul class="rei"><li>週に複数回、平均台・トンネル・ジャンプなどを組み合わせたサーキット運動を行っています。</li><li>ボール遊びや的当てを通じて、体の使い方と目と手の協応を育てています。</li><li>はさみ・のり・ひも通しなど、手先を使う活動を毎回の活動に入れています。</li><li>感覚の過敏さがあるお子さまには、活動前に静かな場所で過ごす時間を設けています。</li><li>トランポリンやバランス遊具を使って、体幹とバランスの経験を重ねています。</li><li>音楽に合わせて体を動かす活動（リトミック等）を取り入れています。</li><li>姿勢が崩れやすいお子さまには、いすや机の高さ、クッションの使い方を調整しています。</li><li>戸外での散歩や公園遊びを、天候に応じて取り入れています。</li></ul><h3>認知・行動</h3><ul class="rei"><li>一日の流れを絵カードやスケジュール表で示し、見通しを持てるようにしています。</li><li>活動の終わりを事前に予告してから区切り、切り替えの負担を減らしています。</li><li>パズル・型はめ・並べ替えなど、考える課題を段階的に用意しています。</li><li>数・文字・形の学習を、遊びの中に取り入れています。</li><li>順番やルールのある遊びを通じて、決まりを守る経験を重ねています。</li><li>気持ちが崩れたときは、落ち着ける場所へ移動し、落ち着いてから振り返りをしています。</li><li>工作や制作活動を通じて、手順を追って最後までやり遂げる経験をつくっています。</li><li>できたことをその場で具体的に言葉にして伝え、次への意欲につなげています。</li></ul><h3>言語・コミュニケーション</h3><ul class="rei"><li>ことばが出にくいお子さまには、絵カードや身振りを使って「伝わった」経験を重ねています。</li><li>要求が通った場面を職員が言葉にして返し、伝える力を育てています。</li><li>絵本の読み聞かせや歌を通じて、ことばに触れる時間を毎回設けています。</li><li>やりとり遊びを通じて、順番に話す・相手の話を聞く経験を重ねています。</li><li>発音や口の動きについて、遊びの中で無理なく取り組んでいます。</li><li>自分の気持ちを言葉やカードで表す方法を、一緒に探しています。</li><li>写真や実物を使って、今日あったことをご家庭に伝えられるようにしています。</li><li>職員が短く分かりやすい言葉で話しかけることを、全職員で共有しています。</li></ul><h3>人間関係・社会性</h3><ul class="rei"><li>少人数のグループで、順番を待つ・道具を貸し借りする場面を意図的につくっています。</li><li>うまくいかなかった場面は、その場で一緒に振り返りをしています。</li><li>あいさつや返事など、人とかかわる入口の場面を毎回の流れに入れています。</li><li>ごっこ遊びや役割のある遊びを通じて、相手の立場に気づく経験をつくっています。</li><li>年齢や発達の近いお子さま同士で活動する時間と、個別の時間を分けています。</li><li>集団の中で困ったときに、職員に助けを求める方法を一緒に練習しています。</li><li>地域の行事や公園で、事業所の外の人とかかわる機会をつくっています。</li><li>お子さま同士のトラブルは、双方の言い分を聞いてから一緒に考える形をとっています。</li></ul>
+
+<h2>7. 都道府県への届出書</h2>
+<p>「支援プログラムの公表状況に関する届出書」（別紙61）を、指定権者に提出します。書くのは8項目です。</p>
+<table>
+<tr><th>法人名／事業所名／サービス種別／所在地／指定年月</th><td>そのまま記入します</td></tr>
+<tr><th>公表の実施時期</th><td><strong>実際に公表を始める日。</strong>令和7年4月以降に公表していなかった場合、この日付が「それ以前は公表していなかった」ことを示す形になります。<strong>先に過去分の取扱いを指定権者にご確認ください。</strong></td></tr>
+<tr><th>公表方法</th><td>①インターネット／②その他 から選びます</td></tr>
+<tr><th style="border-bottom:none">公表内容</th><td style="border-bottom:none">①を選んだ場合は<strong>URLを記入します。</strong>様式にURLの提供元を限定する記載は、当社が確認した84の指定機関では1件もありませんでした。<br><span class="muted">ただし全国の指定権者は都道府県47・政令市20・中核市62などで129以上あり、当社が見ていない指定権者が45以上あります。また、他社が発行したURLで受理された実例を当社は持っていません。</span></td></tr>
+</table>
+<p>自己評価結果等の公表状況に関する届出書（別紙60）と、同じ窓口に同時に提出できます。</p>
+
+<h2 id="toiawase">8. 指定権者への聞き方</h2>
+<p>電話で、事業所名を名乗らずに一般的な取扱いとして聞くことができます。</p>
+<div class="box">
+<p style="margin:0">「事業者向けの一般的な取扱いを教えていただきたいのですが、支援プログラムの公表と届出について2点うかがえますか。<br>
+1点目は、事業所が自法人以外のウェブページに支援プログラムを掲載し、そのURLを公表方法として届け出た場合、受理されますでしょうか。<br>
+2点目は、令和7年4月以降に公表と届出をしていなかった事業所がこれから届け出た場合、減算はいつの月分から適用されますでしょうか。また、過去の報酬について過誤調整や返還は必要になりますでしょうか。」</p>
+</div>
+<p class="muted">事業所名を聞かれた場合は「検討中の段階なので、一般的な取扱いだけ教えてください」とお伝えいただければ大丈夫です。</p>
+
+<h2>9. 書くのが面倒な場合</h2>
+<p>ここまでの内容で、ご自身で作っていただけます。<strong>費用はかかりません。</strong></p>
+<p>それでも手が回らない場合や、<strong>自社のホームページがなくて公表する場所がない</strong>場合は、当社でお引き受けしています。</p>
+<table>
+<tr><th>お渡しするもの</th><td>支援プログラム12項目（Word・HTML）／公表用のページと固定URL／届出書の記載例／指定権者への照会文の記載例／作成の経過の記録</td></tr>
+<tr><th>料金</th><td><strong>29,800円（税込・買い切り）</strong>　年会費・更新料はありません</td></tr>
+<tr><th>お支払い</th><td>納品後30日以内のお振込み。<strong>前払いはいただきません</strong></td></tr>
+<tr><th style="border-bottom:none">お断り</th><td style="border-bottom:none">納品物をご覧いただき、<strong>ご不要と判断された場合は費用をいただきません</strong></td></tr>
+</table>
+<p><a class="cta primary" href="https://acoi-dev.github.io/seido-pages/apply/">お申し込みの内容を記入する</a>
+<a class="cta" href="https://acoi-dev.github.io/seido-pages/sample/">仕上がりの見本を見る</a></p>
+
+<footer>
+<strong>Nexus株式会社</strong><br>
+【所在地を記入】<br>
+電話 【電話番号を記入】　／　FAX 【返信先FAX番号を記入】<br><br>
+出典：こども家庭庁「児童発達支援等における支援プログラムの作成及び公表の手引き」（令和6年7月4日事務連絡）／障発0330第16号 実施上の留意事項通知／令和6年度障害福祉サービス等報酬改定等に関するQ&amp;A VOL.1（令和6年3月29日）／令和5年障害福祉サービス等経営実態調査／WAM NET 障害福祉サービス等情報公表オープンデータ
+</footer>
+</div>
