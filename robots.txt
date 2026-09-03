@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-Disallow: /p/
-Sitemap: https://acoi-dev.github.io/seido-pages/sitemap.xml
+Disallow: /
