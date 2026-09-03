@@ -66,7 +66,7 @@ h3{font-size:15px;margin:28px 0 6px;font-weight:700}
 <tr><th>お支払い</th><td><strong>納品後30日以内のお振込み。</strong>前払いはいただきません。</td></tr>
 <tr><th>お断りいただく場合</th><td>確定のご返信をいただく前であれば、<strong>いつでも、理由なくお断りいただけます。費用はいただきません。</strong></td></tr>
 <tr><th>年会費・更新料</th><td><strong>ありません。</strong>5年間、追加のご請求はしません。</td></tr>
-<tr><th>5年経過後</th><td><strong>ご希望があれば、同じURLを無償で維持します。</strong>URLが5年で止まることはありません。止める場合は6か月前にお知らせし、ファイル一式をお渡しします。</td></tr>
+<tr><th>5年経過後</th><td><strong>ご希望があれば、同じURLを無償で維持します。</strong>URLが5年で止まることはありません。当社が維持を止める場合は、<strong>当社から6か月前にお知らせし</strong>、ファイル一式をお渡しします。</td></tr>
 <tr><th>移設</th><td>いつでも自社サイトへ移せます。<strong>移設に費用はいただきません。</strong>移された場合は公表方法の変更を都道府県にお届けください（記載例をお渡しします）。</td></tr>
 <tr><th>当社が事業を終える場合</th><td><strong>6か月前にお知らせし、ファイル一式をお渡しします。</strong></td></tr>
 <tr><th>指定権者に認められなかったとき</th><td><strong>いただいた費用を全額お返しし、ページを削除します。</strong></td></tr>
@@ -108,6 +108,12 @@ h3{font-size:15px;margin:28px 0 6px;font-weight:700}
   <label>④ 支援方針<textarea name="houshin" rows="3"></textarea></label>
   <label>⑥ 送迎の有無<select name="sougei"><option>あり</option><option>なし</option></select></label>
   <label>⑫ 主な行事等<textarea name="gyoji" rows="2"></textarea></label>
+  <label>⑩ 地域支援・地域連携　関係機関との連携や、地域での取組をお書きください
+    <textarea name="chiiki" rows="2" placeholder="例：相談支援事業所・保育所・医療機関と年4回のケース会議を行っています"></textarea></label>
+  <label>⑪ 職員の質の向上に資する取組　研修・会議・資格取得の支援などをお書きください
+    <textarea name="shokuin" rows="2" placeholder="例：毎週1回のケース会議に加えて、外部研修へ年2回以上参加しています"></textarea></label>
+  <p class="muted" style="margin:-6px 0 18px">③④⑥⑩⑪⑫は、公開情報から書けた場合は空欄で構いません。
+  当社が下書きした内容を、確認のときにお見せします。</p>
   <div class="box accent" style="margin:26px 0">
     <p style="margin-top:0"><strong>⑦ 本人支援の内容と5領域の関連性</strong></p>
     <p class="muted" style="margin-bottom:0">ここが一番書きにくいところなので、<strong>よくある支援を並べました。
@@ -148,6 +154,8 @@ function txt(){
    '④ 支援方針','  '+g('houshin'),'',
    '⑥ 送迎の有無：'+g('sougei'),'',
    '⑫ 主な行事等','  '+g('gyoji'),'',
+   '⑩ 地域支援・地域連携','  '+g('chiiki'),'',
+   '⑪ 職員の質の向上に資する取組','  '+g('shokuin'),'',
    '⑦ 5領域'].concat(ryo()).concat(['',
    '※ この時点では費用は発生しません。納品物を確認したうえで、',
    '　 「確定します」と返信した時点で契約成立と理解しています。']);
