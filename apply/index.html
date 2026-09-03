@@ -39,6 +39,13 @@ form input,form textarea,form select{display:block;width:100%;margin-top:6px;pad
 form textarea{resize:vertical;line-height:1.7}
 form input:focus,form textarea:focus,form select:focus{outline:2px solid var(--accent);outline-offset:1px}
 button.cta{font:inherit;cursor:pointer}
+
+fieldset{border:1px solid var(--line);border-radius:2px;padding:16px 18px 10px;margin:0 0 20px}
+legend{font-size:13px;font-weight:700;color:var(--fg);padding:0 8px}
+label.chk{display:flex;gap:10px;align-items:flex-start;margin:0 0 10px;font-size:14px;color:var(--fg);cursor:pointer;line-height:1.65}
+label.chk input{width:auto;margin:5px 0 0;flex:none}
+label.chk span{flex:1}
+label.free{display:block;margin:14px 0 4px;font-size:12px;color:var(--muted)}
 </style>
 <div class="wrap">
 <p class="eyebrow">お申し込み</p>
@@ -91,12 +98,16 @@ button.cta{font:inherit;cursor:pointer}
   <label>④ 支援方針<textarea name="houshin" rows="3"></textarea></label>
   <label>⑥ 送迎の有無<select name="sougei"><option>あり</option><option>なし</option></select></label>
   <label>⑫ 主な行事等<textarea name="gyoji" rows="2"></textarea></label>
-  <p class="muted" style="margin:18px 0 6px"><strong>⑦ 5領域</strong>　公開情報から書けなかった領域だけご記入ください。空欄でも構いません。</p>
-  <label>健康・生活<textarea name="r1" rows="2"></textarea></label>
-  <label>運動・感覚<textarea name="r2" rows="2"></textarea></label>
-  <label>認知・行動<textarea name="r3" rows="2"></textarea></label>
-  <label>言語・コミュニケーション<textarea name="r4" rows="2"></textarea></label>
-  <label>人間関係・社会性<textarea name="r5" rows="2"></textarea></label>
+  <div class="box accent" style="margin:26px 0">
+    <p style="margin-top:0"><strong>⑦ 本人支援の内容と5領域の関連性</strong></p>
+    <p class="muted" style="margin-bottom:0">ここが一番書きにくいところなので、<strong>よくある支援を並べました。
+    貴事業所で実際に行っているものにチェックを入れてください。</strong>
+    選んだものが、そのまま⑦の文章になります。<br>
+    <strong>★ 実際に行っていないものは選ばないでください。</strong>
+    公表する文書に事実と異なる内容を載せることはできません。<br>
+    当てはまるものがない領域は、下の空欄にご自由にお書きください。1〜3行で構いません。</p>
+  </div>
+<fieldset><legend>健康・生活</legend><label class="chk"><input type="checkbox" name="ry0" value="来所後の手洗いと持ち物の片づけを、毎回同じ順序で行っています。"><span>来所後の手洗いと持ち物の片づけを、毎回同じ順序で行っています。</span></label><label class="chk"><input type="checkbox" name="ry0" value="活動の切れ目ごとに、水分補給とトイレの声かけをしています。"><span>活動の切れ目ごとに、水分補給とトイレの声かけをしています。</span></label><label class="chk"><input type="checkbox" name="ry0" value="食事の場面では、苦手な食材を無理に勧めず、量を自分で選べる形にしています。"><span>食事の場面では、苦手な食材を無理に勧めず、量を自分で選べる形にしています。</span></label><label class="chk"><input type="checkbox" name="ry0" value="着替えや身支度は、できるところまで自分で行い、難しいところだけ手を添えています。"><span>着替えや身支度は、できるところまで自分で行い、難しいところだけ手を添えています。</span></label><label class="chk"><input type="checkbox" name="ry0" value="一日の生活の流れを絵や写真で示し、次に何をするかが分かるようにしています。"><span>一日の生活の流れを絵や写真で示し、次に何をするかが分かるようにしています。</span></label><label class="chk"><input type="checkbox" name="ry0" value="睡眠や食事の様子をご家庭と共有し、生活リズムを整える相談をしています。"><span>睡眠や食事の様子をご家庭と共有し、生活リズムを整える相談をしています。</span></label><label class="chk"><input type="checkbox" name="ry0" value="季節や体調に応じて、活動量と休憩の取り方を調整しています。"><span>季節や体調に応じて、活動量と休憩の取り方を調整しています。</span></label><label class="chk"><input type="checkbox" name="ry0" value="衣服の調節や体温の確認など、自分の体の状態に気づく声かけをしています。"><span>衣服の調節や体温の確認など、自分の体の状態に気づく声かけをしています。</span></label><label class="free">上のどれにも当てはまらない場合、こちらにお書きください<textarea name="rf0" rows="2" placeholder="1〜3行で構いません"></textarea></label></fieldset><fieldset><legend>運動・感覚</legend><label class="chk"><input type="checkbox" name="ry1" value="週に複数回、平均台・トンネル・ジャンプなどを組み合わせたサーキット運動を行っています。"><span>週に複数回、平均台・トンネル・ジャンプなどを組み合わせたサーキット運動を行っています。</span></label><label class="chk"><input type="checkbox" name="ry1" value="ボール遊びや的当てを通じて、体の使い方と目と手の協応を育てています。"><span>ボール遊びや的当てを通じて、体の使い方と目と手の協応を育てています。</span></label><label class="chk"><input type="checkbox" name="ry1" value="はさみ・のり・ひも通しなど、手先を使う活動を毎回の活動に入れています。"><span>はさみ・のり・ひも通しなど、手先を使う活動を毎回の活動に入れています。</span></label><label class="chk"><input type="checkbox" name="ry1" value="感覚の過敏さがあるお子さまには、活動前に静かな場所で過ごす時間を設けています。"><span>感覚の過敏さがあるお子さまには、活動前に静かな場所で過ごす時間を設けています。</span></label><label class="chk"><input type="checkbox" name="ry1" value="トランポリンやバランス遊具を使って、体幹とバランスの経験を重ねています。"><span>トランポリンやバランス遊具を使って、体幹とバランスの経験を重ねています。</span></label><label class="chk"><input type="checkbox" name="ry1" value="音楽に合わせて体を動かす活動（リトミック等）を取り入れています。"><span>音楽に合わせて体を動かす活動（リトミック等）を取り入れています。</span></label><label class="chk"><input type="checkbox" name="ry1" value="姿勢が崩れやすいお子さまには、いすや机の高さ、クッションの使い方を調整しています。"><span>姿勢が崩れやすいお子さまには、いすや机の高さ、クッションの使い方を調整しています。</span></label><label class="chk"><input type="checkbox" name="ry1" value="戸外での散歩や公園遊びを、天候に応じて取り入れています。"><span>戸外での散歩や公園遊びを、天候に応じて取り入れています。</span></label><label class="free">上のどれにも当てはまらない場合、こちらにお書きください<textarea name="rf1" rows="2" placeholder="1〜3行で構いません"></textarea></label></fieldset><fieldset><legend>認知・行動</legend><label class="chk"><input type="checkbox" name="ry2" value="一日の流れを絵カードやスケジュール表で示し、見通しを持てるようにしています。"><span>一日の流れを絵カードやスケジュール表で示し、見通しを持てるようにしています。</span></label><label class="chk"><input type="checkbox" name="ry2" value="活動の終わりを事前に予告してから区切り、切り替えの負担を減らしています。"><span>活動の終わりを事前に予告してから区切り、切り替えの負担を減らしています。</span></label><label class="chk"><input type="checkbox" name="ry2" value="パズル・型はめ・並べ替えなど、考える課題を段階的に用意しています。"><span>パズル・型はめ・並べ替えなど、考える課題を段階的に用意しています。</span></label><label class="chk"><input type="checkbox" name="ry2" value="数・文字・形の学習を、遊びの中に取り入れています。"><span>数・文字・形の学習を、遊びの中に取り入れています。</span></label><label class="chk"><input type="checkbox" name="ry2" value="順番やルールのある遊びを通じて、決まりを守る経験を重ねています。"><span>順番やルールのある遊びを通じて、決まりを守る経験を重ねています。</span></label><label class="chk"><input type="checkbox" name="ry2" value="気持ちが崩れたときは、落ち着ける場所へ移動し、落ち着いてから振り返りをしています。"><span>気持ちが崩れたときは、落ち着ける場所へ移動し、落ち着いてから振り返りをしています。</span></label><label class="chk"><input type="checkbox" name="ry2" value="工作や制作活動を通じて、手順を追って最後までやり遂げる経験をつくっています。"><span>工作や制作活動を通じて、手順を追って最後までやり遂げる経験をつくっています。</span></label><label class="chk"><input type="checkbox" name="ry2" value="できたことをその場で具体的に言葉にして伝え、次への意欲につなげています。"><span>できたことをその場で具体的に言葉にして伝え、次への意欲につなげています。</span></label><label class="free">上のどれにも当てはまらない場合、こちらにお書きください<textarea name="rf2" rows="2" placeholder="1〜3行で構いません"></textarea></label></fieldset><fieldset><legend>言語・コミュニケーション</legend><label class="chk"><input type="checkbox" name="ry3" value="ことばが出にくいお子さまには、絵カードや身振りを使って「伝わった」経験を重ねています。"><span>ことばが出にくいお子さまには、絵カードや身振りを使って「伝わった」経験を重ねています。</span></label><label class="chk"><input type="checkbox" name="ry3" value="要求が通った場面を職員が言葉にして返し、伝える力を育てています。"><span>要求が通った場面を職員が言葉にして返し、伝える力を育てています。</span></label><label class="chk"><input type="checkbox" name="ry3" value="絵本の読み聞かせや歌を通じて、ことばに触れる時間を毎回設けています。"><span>絵本の読み聞かせや歌を通じて、ことばに触れる時間を毎回設けています。</span></label><label class="chk"><input type="checkbox" name="ry3" value="やりとり遊びを通じて、順番に話す・相手の話を聞く経験を重ねています。"><span>やりとり遊びを通じて、順番に話す・相手の話を聞く経験を重ねています。</span></label><label class="chk"><input type="checkbox" name="ry3" value="発音や口の動きについて、遊びの中で無理なく取り組んでいます。"><span>発音や口の動きについて、遊びの中で無理なく取り組んでいます。</span></label><label class="chk"><input type="checkbox" name="ry3" value="自分の気持ちを言葉やカードで表す方法を、一緒に探しています。"><span>自分の気持ちを言葉やカードで表す方法を、一緒に探しています。</span></label><label class="chk"><input type="checkbox" name="ry3" value="写真や実物を使って、今日あったことをご家庭に伝えられるようにしています。"><span>写真や実物を使って、今日あったことをご家庭に伝えられるようにしています。</span></label><label class="chk"><input type="checkbox" name="ry3" value="職員が短く分かりやすい言葉で話しかけることを、全職員で共有しています。"><span>職員が短く分かりやすい言葉で話しかけることを、全職員で共有しています。</span></label><label class="free">上のどれにも当てはまらない場合、こちらにお書きください<textarea name="rf3" rows="2" placeholder="1〜3行で構いません"></textarea></label></fieldset><fieldset><legend>人間関係・社会性</legend><label class="chk"><input type="checkbox" name="ry4" value="少人数のグループで、順番を待つ・道具を貸し借りする場面を意図的につくっています。"><span>少人数のグループで、順番を待つ・道具を貸し借りする場面を意図的につくっています。</span></label><label class="chk"><input type="checkbox" name="ry4" value="うまくいかなかった場面は、その場で一緒に振り返りをしています。"><span>うまくいかなかった場面は、その場で一緒に振り返りをしています。</span></label><label class="chk"><input type="checkbox" name="ry4" value="あいさつや返事など、人とかかわる入口の場面を毎回の流れに入れています。"><span>あいさつや返事など、人とかかわる入口の場面を毎回の流れに入れています。</span></label><label class="chk"><input type="checkbox" name="ry4" value="ごっこ遊びや役割のある遊びを通じて、相手の立場に気づく経験をつくっています。"><span>ごっこ遊びや役割のある遊びを通じて、相手の立場に気づく経験をつくっています。</span></label><label class="chk"><input type="checkbox" name="ry4" value="年齢や発達の近いお子さま同士で活動する時間と、個別の時間を分けています。"><span>年齢や発達の近いお子さま同士で活動する時間と、個別の時間を分けています。</span></label><label class="chk"><input type="checkbox" name="ry4" value="集団の中で困ったときに、職員に助けを求める方法を一緒に練習しています。"><span>集団の中で困ったときに、職員に助けを求める方法を一緒に練習しています。</span></label><label class="chk"><input type="checkbox" name="ry4" value="地域の行事や公園で、事業所の外の人とかかわる機会をつくっています。"><span>地域の行事や公園で、事業所の外の人とかかわる機会をつくっています。</span></label><label class="chk"><input type="checkbox" name="ry4" value="お子さま同士のトラブルは、双方の言い分を聞いてから一緒に考える形をとっています。"><span>お子さま同士のトラブルは、双方の言い分を聞いてから一緒に考える形をとっています。</span></label><label class="free">上のどれにも当てはまらない場合、こちらにお書きください<textarea name="rf4" rows="2" placeholder="1〜3行で構いません"></textarea></label></fieldset>
   <p style="margin-top:24px">
     <button class="cta primary" type="button" onclick="mk()">メールソフトで開く</button>
     <button class="cta" type="button" onclick="cp()">内容をコピーする</button>
@@ -104,6 +115,17 @@ button.cta{font:inherit;cursor:pointer}
   <p class="muted" id="msg" style="min-height:1.4em"></p>
 </form>
 <script>
+function ryo(){
+  var out=[], f=document.getElementById('apf');
+  var names=["健康・生活", "運動・感覚", "認知・行動", "言語・コミュニケーション", "人間関係・社会性"];
+  for(var i=0;i<names.length;i++){
+    var picked=[], boxes=f.querySelectorAll('input[name="ry'+i+'"]:checked');
+    for(var j=0;j<boxes.length;j++) picked.push(boxes[j].value);
+    var free=f.elements['rf'+i]; if(free && free.value.trim()) picked.push(free.value.trim());
+    out.push('  '+names[i]+'：'+(picked.length?picked.join(' '):'（該当なし）'));
+  }
+  return out;
+}
 function txt(){
   var f=document.getElementById('apf'), g=function(n){var el=f.elements[n];return el?el.value.trim():'';};
   var L=['支援プログラムの作成と公表を申し込みます。','',
@@ -113,12 +135,7 @@ function txt(){
    '④ 支援方針','  '+g('houshin'),'',
    '⑥ 送迎の有無：'+g('sougei'),'',
    '⑫ 主な行事等','  '+g('gyoji'),'',
-   '⑦ 5領域',
-   '  健康・生活：'+g('r1'),
-   '  運動・感覚：'+g('r2'),
-   '  認知・行動：'+g('r3'),
-   '  言語・コミュニケーション：'+g('r4'),
-   '  人間関係・社会性：'+g('r5'),'',
+   '⑦ 5領域'].concat(ryo()).concat(['',
    '※ この時点では費用は発生しません。納品物を確認したうえで、',
    '　 「確定します」と返信した時点で契約成立と理解しています。'];
   return L.join('
